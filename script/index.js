@@ -33,7 +33,7 @@ let sideR=document.getElementById("sideResume")
 sideR.onclick=()=>{
   window.open(".https://drive.google.com/file/d/1Ky0ikHzGNiAjy-ZUpehxaUv_tno-3vUD/view?usp=sharing" )
 }
-let aboutR=document.getElementById("aboutResumepdf")
+let aboutR=document.getElementById("resume-button-2")
 aboutR.onclick=()=>{
   window.open("https://drive.google.com/file/d/1Ky0ikHzGNiAjy-ZUpehxaUv_tno-3vUD/view?usp=sharing" )
 }
