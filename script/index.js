@@ -25,7 +25,7 @@ ResumeBtn.onclick=()=>{
 }
 
 
-let navResume=document.getElementById("navResume")
+let navResume=document.getElementById("resume-button-1")
 navResume.onclick=()=>{
   window.open("https://drive.google.com/file/d/1Ky0ikHzGNiAjy-ZUpehxaUv_tno-3vUD/view?usp=sharing" )
 }
