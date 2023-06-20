@@ -19,7 +19,7 @@ document.querySelector(".hemburger").addEventListener("click",()=>{
     }
 })
 
-let ResumeBtn=document.getElementById("homeBtndiv")
+let ResumeBtn=document.getElementById("resume-button-1")
 ResumeBtn.onclick=()=>{
   window.open("https://drive.google.com/file/d/1Ky0ikHzGNiAjy-ZUpehxaUv_tno-3vUD/view?usp=sharing" )
 }
