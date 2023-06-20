@@ -21,19 +21,19 @@ document.querySelector(".hemburger").addEventListener("click",()=>{
 
 let ResumeBtn=document.getElementById("homeBtndiv")
 ResumeBtn.onclick=()=>{
-  window.open("./Om-Prakash-Mishra-Resume.pdf", "_blank")
+  window.open("https://drive.google.com/file/d/1Ky0ikHzGNiAjy-ZUpehxaUv_tno-3vUD/view?usp=sharing" )
 }
 
 
 let navResume=document.getElementById("navResume")
 navResume.onclick=()=>{
-  window.open("./Om-Prakash-Mishra-Resume.pdf", "_blank")
+  window.open("https://drive.google.com/file/d/1Ky0ikHzGNiAjy-ZUpehxaUv_tno-3vUD/view?usp=sharing" )
 }
 let sideR=document.getElementById("sideResume")
 sideR.onclick=()=>{
-  window.open("./Om-Prakash-Mishra-Resume.pdf", "_blank")
+  window.open(".https://drive.google.com/file/d/1Ky0ikHzGNiAjy-ZUpehxaUv_tno-3vUD/view?usp=sharing" )
 }
 let aboutR=document.getElementById("aboutResumepdf")
 aboutR.onclick=()=>{
-  window.open("./Om-Prakash-Mishra-Resume.pdf", "_blank")
+  window.open("https://drive.google.com/file/d/1Ky0ikHzGNiAjy-ZUpehxaUv_tno-3vUD/view?usp=sharing" )
 }
