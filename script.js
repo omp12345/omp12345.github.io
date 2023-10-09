@@ -9,10 +9,10 @@ menuIcon.onclick = () => {
 };
 
 // *=============================== github calender ==================================
-    // GitHubCalendar(".calendar", "mdasriya");
+    // GitHubCalendar(".calendar", "omp12345");
 
     // // or enable responsive functionality:
-    // GitHubCalendar(".calendar", "mdasriya", { responsive: true });
+    // GitHubCalendar(".calendar", "omp12345", { responsive: true });
 
 // *=============================== resume opening in a new tab ==================================
 
@@ -96,13 +96,13 @@ function statsfun(){
 
 
 
-GitHubCalendar(".calendar", "mdasriya");
+GitHubCalendar(".calendar", "omp12345");
 
 // or enable responsive functionality:
-GitHubCalendar(".calendar", "mdasriya", { responsive: true });
+GitHubCalendar(".calendar", "omp12345", { responsive: true });
 
 // Use a proxy
-GitHubCalendar(".calendar", "mdasriya", {
+GitHubCalendar(".calendar", "omp12345", {
    proxy (username) {
      return fetch(`https://your-proxy.com/github?user=${username}`)
    }
