@@ -18,9 +18,9 @@
   }
   
   body {
-    background:rgb(128, 75, 0);
+   
     color: var(--text-color);
-	  background-image=url("https://scitechdaily.com/images/Universe-Astronomy-Art-Concept-777x518.jpg?ezimgfmt=ng:webp/ngcb2")
+	  background-image:url("https://scitechdaily.com/images/Universe-Astronomy-Art-Concept-777x518.jpg?ezimgfmt=ng:webp/ngcb2")
     /* color: var(--text-shadow-red); */
   
   }
