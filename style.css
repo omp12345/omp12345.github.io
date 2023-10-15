@@ -1,4 +1,6 @@
-
+p{
+  color: white;
+}
 
 
 * {
@@ -11,16 +13,17 @@
     scroll-behavior: smooth;
     font-family: var(--fontFamily-noto_sans);
     font-family: 'Open Sans', sans-serif;
+    
   }
   html {
     font-size: 62.5%;
-    overflow-x: hidden
+    overflow-x: hidden;
   }
   
   body {
-   
+    background:rgb(128, 75, 0);
     color: var(--text-color);
-	  background-image:url("https://scitechdaily.com/images/Universe-Astronomy-Art-Concept-777x518.jpg?ezimgfmt=ng:webp/ngcb2")
+    background-image: url("https://scitechdaily.com/images/Universe-Astronomy-Art-Concept-777x518.jpg?ezimgfmt=ng:webp/ngcb2");
     /* color: var(--text-shadow-red); */
   
   }
@@ -647,7 +650,7 @@ a:focus::after {
     @media (max-width: 1200px) {
       .calenderimg img{
         width: 100%;
-        background-color: #7091a0;
+        background-color: #78c4e7;
       }
       html {
         font-size: 55%;
@@ -657,16 +660,20 @@ a:focus::after {
     @media (max-width: 991px) {
       .header {
         padding: 2rem 3%;
-        background-color: #4dd10b;
+        background-color: #0a1406;
+        background-image:url("https://media.istockphoto.com/id/1411914926/photo/milky-way-reflected-by-crater-lake.jpg?s=1024x1024&w=is&k=20&c=gvONV_Ui0Xaj1M6cJW91FYq9zQT7HkyCWIVdlUri4Pc=")
       }
       section {
         padding: 10rem 3% 2rem;
+        background-color: skyblue;
       }
       .skills {
         padding-bottom: 7rem;
+        background-image:url("https://media.istockphoto.com/id/1411914926/photo/milky-way-reflected-by-crater-lake.jpg?s=1024x1024&w=is&k=20&c=gvONV_Ui0Xaj1M6cJW91FYq9zQT7HkyCWIVdlUri4Pc=") ;
       }
       .project {
         padding-bottom: 7rem;
+        background-image: url("https://media.istockphoto.com/id/855749040/photo/northern-lights.jpg?s=612x612&w=0&k=20&c=eoMozAgAtiYrT1n1CHIBMOe-MxIuRvVrU5ItAOjHDnA=");
       }
       .contact {
         min-height: auto;
@@ -676,6 +683,7 @@ a:focus::after {
       }
       #github-streak-stats {
         width: 80%;
+        
       }
       #github-stats-card {
         width: 80%;
@@ -782,6 +790,8 @@ a:focus::after {
       .home { position: relative; }
       .calenderimg img{
         width: 100%;
+     
+        /* background-image: url("https://media.istockphoto.com/id/852485250/photo/milky-way-at-the-lake-of-fusine-italy.jpg?s=612x612&w=0&k=20&c=dWUlh3eyBGmZOxfXhNjOPxxcYC_f9xMDKY0ZiodxdSc="); */
       }
       .hero-bg {
         display: block;
