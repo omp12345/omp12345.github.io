@@ -163,25 +163,25 @@ for (let i = 0; i < elements.length; i++) {
   });
 }
 
-if ("speechSynthesis" in window) {
+// if ("speechSynthesis" in window) {
   const resumeButton = document.getElementById("resume-button-1");
   const resumeButton1 = document.getElementById("resume-button-2");
 
-  function speakText(text) {
-    const speech = new SpeechSynthesisUtterance(text);
-    speechSynthesis.speak(speech);
-  }
+//   function speakText(text) {
+//     const speech = new SpeechSynthesisUtterance(text);
+//     speechSynthesis.speak(speech);
+//   }
 
-  resumeButton.addEventListener("mouseover", () => {
-    speakText("click to download resume");
-  });
-  resumeButton.addEventListener("mouseleave", () => {
-    window.speechSynthesis.cancel();
-  });
-  resumeButton1.addEventListener("mouseover", () => {
-    speakText("click to download resume");
-  });
-}
+//   // resumeButton.addEventListener("mouseover", () => {
+//   //   speakText("click to download resume");
+//   // });
+//   resumeButton.addEventListener("mouseleave", () => {
+//     window.speechSynthesis.cancel();
+//   });
+//   // resumeButton1.addEventListener("mouseover", () => {
+//   //   speakText("click to download resume");
+//   // });
+// }
 
 function speakSkillName(skillName, x) {
   let message = undefined;
