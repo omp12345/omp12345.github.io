@@ -118,20 +118,20 @@ function speakText(text) {
   synth.speak(utterance);
 }
 
-const projectCards = document.getElementsByClassName("project-card");
+// const projectCards = document.getElementsByClassName("project-card");
 
-for (let i = 0; i < projectCards.length; i++) {
-  const projectCard = projectCards[i];
-  const p1data = projectCard.querySelector(".p1").innerText;
+// for (let i = 0; i < projectCards.length; i++) {
+//   const projectCard = projectCards[i];
+//   const p1data = projectCard.querySelector(".p1").innerText;
 
-  projectCard.addEventListener("mouseenter", () => {
-    speakText(p1data);
-  });
+//   projectCard.addEventListener("mouseenter", () => {
+//     speakText(p1data);
+//   });
 
-  projectCard.addEventListener("mouseleave", () => {
-    window.speechSynthesis.cancel();
-  });
-}
+//   projectCard.addEventListener("mouseleave", () => {
+//     window.speechSynthesis.cancel();
+//   });
+// }
 
 function speakTextWithIndianAccent(text, voiceName) {
   const synth = window.speechSynthesis;
