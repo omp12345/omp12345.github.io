@@ -105,6 +105,87 @@ GitHubCalendar(".calendar", "omp12345", {
   },
 }).then((r) => r.text());
 
+function speakText(text) {
+  const synth = window.speechSynthesis;
+  const utterance = new SpeechSynthesisUtterance(text);
+  synth.speak(utterance);
+}
+
+
+function speakTextWithIndianAccent(text, voiceName) {
+  const synth = window.speechSynthesis;
+  const utterance = new SpeechSynthesisUtterance(text);
+
+  const voices = synth.getVoices();
+  const indianVoice = voices.find((voice) => voice.lang === voiceName);
+
+  if (indianVoice) {
+    utterance.voice = indianVoice;
+  }
+
+  synth.speak(utterance);
+}
+
+const indianAccentVoiceName = "hindi";
+
+const elements = document.getElementsByClassName("home-content");
+
+for (let i = 0; i < elements.length; i++) {
+  elements[i].addEventListener("mouseenter", () => {
+    const text =
+      "Hii Recruiter  I am Om Prakash Mishra I am web developer welcome to my portpholio website";
+    speakTextWithIndianAccent(text, indianAccentVoiceName);
+  });
+
+  elements[i].addEventListener("mouseleave", () => {
+    window.speechSynthesis.cancel();
+  });
+}
+
+// if ("speechSynthesis" in window) {
+  const resumeButton = document.getElementById("resume-button-1");
+  const resumeButton1 = document.getElementById("resume-button-2");
+
+
+
+function speakSkillName(skillName, x) {
+  let message = undefined;
+  if (x) {
+    message = ` i rated myself in ${skillName} is ${x}`;
+  } else if (skillName == "Thunder Client") {
+    message = ` i rated myself in ${skillName} is ${8}`;
+  } else if (skillName == "VSCode") {
+    message = ` i rated myself in ${skillName} is ${10}`;
+  } else if (skillName == "Bootstrap") {
+    message = ` I am learning ${skillName}`;
+  } else {
+    message = ` thank You}`;
+  }
+  const speech = new SpeechSynthesisUtterance(message);
+  speechSynthesis.speak(speech);
+}
+
+const skillButtons = document.querySelectorAll(".skills-card.tag-btn");
+
+skillButtons.forEach((button, index) => {
+  const arr = [7, 6.5, 8, 7, 7.5, 7, 6.5, 6, 7];
+  button.addEventListener("mouseover", () => {
+    const skillName = button.querySelector(".skills-card-name").textContent;
+    speakSkillName(skillName, arr[index]);
+
+    button.addEventListener("mouseout", () => {
+      speechSynthesis.cancel();
+    });
+  });
+});
+
+// Function to speak a message
+function speakMessage(message) {
+  const speech = new SpeechSynthesisUtterance(message);
+  speechSynthesis.speak(speech);
+}
+
+
 const targetElement = document.createElement('div');
 targetElement.id = 'end-of-page-marker';
 document.body.appendChild(targetElement);
@@ -120,7 +201,7 @@ const options = {
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      // speakMessage("Thank You for visting, have a great time");
+      speakMessage("Thank You for visting, have a great time");
     }
   });
 }, options);
