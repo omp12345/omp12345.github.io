@@ -8,13 +8,6 @@ menuIcon.onclick = () => {
   navbar.classList.toggle("active");
 };
 
-// *=============================== github calender ==================================
-GitHubCalendar(".calendar", "omp12345");
-
-// or enable responsive functionality:
-GitHubCalendar(".calendar", "omp12345", { responsive: true });
-
-// *=============================== resume opening in a new tab ==================================
 
 let resume1 = document
   .getElementById("resume-button-1")
@@ -118,20 +111,6 @@ function speakText(text) {
   synth.speak(utterance);
 }
 
-// const projectCards = document.getElementsByClassName("project-card");
-
-// for (let i = 0; i < projectCards.length; i++) {
-//   const projectCard = projectCards[i];
-//   const p1data = projectCard.querySelector(".p1").innerText;
-
-//   projectCard.addEventListener("mouseenter", () => {
-//     speakText(p1data);
-//   });
-
-//   projectCard.addEventListener("mouseleave", () => {
-//     window.speechSynthesis.cancel();
-//   });
-// }
 
 function speakTextWithIndianAccent(text, voiceName) {
   const synth = window.speechSynthesis;
@@ -167,21 +146,7 @@ for (let i = 0; i < elements.length; i++) {
   const resumeButton = document.getElementById("resume-button-1");
   const resumeButton1 = document.getElementById("resume-button-2");
 
-//   function speakText(text) {
-//     const speech = new SpeechSynthesisUtterance(text);
-//     speechSynthesis.speak(speech);
-//   }
 
-//   // resumeButton.addEventListener("mouseover", () => {
-//   //   speakText("click to download resume");
-//   // });
-//   resumeButton.addEventListener("mouseleave", () => {
-//     window.speechSynthesis.cancel();
-//   });
-//   // resumeButton1.addEventListener("mouseover", () => {
-//   //   speakText("click to download resume");
-//   // });
-// }
 
 function speakSkillName(skillName, x) {
   let message = undefined;
