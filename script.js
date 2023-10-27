@@ -1,4 +1,3 @@
-// *=============================== toggle icon navbar ==================================
 
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector("#nav-menu");
@@ -7,14 +6,6 @@ menuIcon.onclick = () => {
   menuIcon.classList.toggle("bx-x");
   navbar.classList.toggle("active");
 };
-
-// *=============================== github calender ==================================
-// GitHubCalendar(".calendar", "omp12345");
-
-// // or enable responsive functionality:
-// GitHubCalendar(".calendar", "omp12345", { responsive: true });
-
-// *=============================== resume opening in a new tab ==================================
 
 let resume1 = document
   .getElementById("resume-button-1")
@@ -29,7 +20,7 @@ function NewTab() {
   );
 }
 
-// *=============================== scroll sections active link ==================================
+
 let sections = document.querySelectorAll("section");
 let navlinks = document.querySelectorAll("header nav a");
 
@@ -49,19 +40,17 @@ window.onscroll = () => {
       });
     }
   });
-  // *=============================== sticky navbar ==================================
+  
 
   let header = document.querySelector("header");
 
   header.classList.toggle("sticky", window.scrollY > 100);
 
-  // *=============================== remove toggle icon and navbar when click navbar link(scroll) ==================================
+
 
   menuIcon.classList.remove("bx-x");
   navbar.classList.remove("active");
 };
-
-// *=============================== scroll reveal ==================================
 
 ScrollReveal({
   // reset: true,
@@ -102,52 +91,21 @@ function statsfun() {
 
 GitHubCalendar(".calendar", "omp12345");
 
-// or enable responsive functionality:
+
 GitHubCalendar(".calendar", "omp12345", { responsive: true });
 
-// Use a proxy
+
 GitHubCalendar(".calendar", "omp12345", {
   proxy(username) {
     return fetch(`https://your-proxy.com/github?user=${username}`);
   },
-}).then((r) => r.text());
+}).then((r) => r.text())
 
-function speakText(text) {
-  const synth = window.speechSynthesis;
-  const utterance = new SpeechSynthesisUtterance(text);
-  synth.speak(utterance);
-}
 
-// const projectCards = document.getElementsByClassName("project-card");
 
-// for (let i = 0; i < projectCards.length; i++) {
-//   const projectCard = projectCards[i];
-//   const p1data = projectCard.querySelector(".p1").innerText;
 
-//   projectCard.addEventListener("mouseenter", () => {
-//     speakText(p1data);
-//   });
 
-//   projectCard.addEventListener("mouseleave", () => {
-//     window.speechSynthesis.cancel();
-//   });
-// }
 
-function speakTextWithIndianAccent(text, voiceName) {
-  const synth = window.speechSynthesis;
-  const utterance = new SpeechSynthesisUtterance(text);
-
-  const voices = synth.getVoices();
-  const indianVoice = voices.find((voice) => voice.lang === voiceName);
-
-  if (indianVoice) {
-    utterance.voice = indianVoice;
-  }
-
-  synth.speak(utterance);
-}
-
-const indianAccentVoiceName = "hindi";
 
 const elements = document.getElementsByClassName("home-content");
 
@@ -166,22 +124,6 @@ for (let i = 0; i < elements.length; i++) {
 // if ("speechSynthesis" in window) {
   const resumeButton = document.getElementById("resume-button-1");
   const resumeButton1 = document.getElementById("resume-button-2");
-
-//   function speakText(text) {
-//     const speech = new SpeechSynthesisUtterance(text);
-//     speechSynthesis.speak(speech);
-//   }
-
-//   // resumeButton.addEventListener("mouseover", () => {
-//   //   speakText("click to download resume");
-//   // });
-//   resumeButton.addEventListener("mouseleave", () => {
-//     window.speechSynthesis.cancel();
-//   });
-//   // resumeButton1.addEventListener("mouseover", () => {
-//   //   speakText("click to download resume");
-//   // });
-// }
 
 function speakSkillName(skillName, x) {
   let message = undefined;
