@@ -9,10 +9,10 @@ menuIcon.onclick = () => {
 };
 
 // *=============================== github calender ==================================
-// GitHubCalendar(".calendar", "omp12345");
+GitHubCalendar(".calendar", "omp12345");
 
-// // or enable responsive functionality:
-// GitHubCalendar(".calendar", "omp12345", { responsive: true });
+// or enable responsive functionality:
+GitHubCalendar(".calendar", "omp12345", { responsive: true });
 
 // *=============================== resume opening in a new tab ==================================
 
