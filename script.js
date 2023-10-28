@@ -106,4 +106,4 @@ GitHubCalendar(".calendar", "opm12345", {
    proxy (username) {
      return fetch(`https://your-proxy.com/github?user=${username}`)
    }
-}).then(r => console.log(r))
+}).then(r => r.text())
