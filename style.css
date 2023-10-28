@@ -73,8 +73,7 @@ p{
      
       /**
      * BORDER RADIUS
-     */
-  
+    
     --radius-6: 6px;
     --radius-8: 8px;
     --radius-16: 16px;
@@ -651,6 +650,7 @@ a:focus::after {
       .calenderimg img{
         width: 100%;
         background-color: #78c4e7;
+        border: none;
       }
       html {
         font-size: 55%;

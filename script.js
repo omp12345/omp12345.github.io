@@ -93,11 +93,11 @@ function statsfun(){
   );
 }
 
-GitHubCalendar(".calendar", "omp12345", {
-  responsive: true,
-  global_stats: false,
-  tooltips: true,
-});
+// GitHubCalendar(".calendar", "omp12345", {
+//   responsive: true,
+//   global_stats: false,
+//   tooltips: true,
+// });
 
 
 
