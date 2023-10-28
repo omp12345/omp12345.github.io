@@ -696,7 +696,7 @@ a:focus::after {
   
     }
     @media (max-width: 768px) {
-      .react-activity-calendar img{
+      .calenderimg img{
         width: 100%;
       }
       #menu-icon {
