@@ -87,7 +87,7 @@ let stats = document.getElementById("github-top-langs").addEventListener("click"
 
 function statsfun(){
   window.open(
-    "https://github.com/mdasriya",
+    "https://github.com/opm12345",
     "_blank"
   );
 }
@@ -96,13 +96,13 @@ function statsfun(){
 
 
 
-GitHubCalendar(".calendar", "mdasriya");
+GitHubCalendar(".calendar", "opm12345");
 
 // or enable responsive functionality:
-GitHubCalendar(".calendar", "mdasriya", { responsive: true });
+GitHubCalendar(".calendar", "opm12345", { responsive: true });
 
 // Use a proxy
-GitHubCalendar(".calendar", "mdasriya", {
+GitHubCalendar(".calendar", "opm12345", {
    proxy (username) {
      return fetch(`https://your-proxy.com/github?user=${username}`)
    }
