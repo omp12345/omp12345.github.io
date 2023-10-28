@@ -1,5 +1,7 @@
 // *=============================== toggle icon navbar ==================================
 
+const { default: GitHubCalendar } = require("react-github-calendar");
+
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('#nav-menu')
 
