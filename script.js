@@ -93,23 +93,30 @@ function statsfun(){
   );
 }
 
-
-
-
-
-
-
-// or enable responsive functionality:
-
-
-GitHubCalendar(".calendar", "omp12345");
-
-// or enable responsive functionality:
-GitHubCalendar(".calendar", "omp12345", { responsive: true });
-
-// Use a proxy
 GitHubCalendar(".calendar", "omp12345", {
-   proxy (username) {
-     return fetch(`https://your-proxy.com/github?user=${username}`)
-   }
-}).then(r => r.text())
+  responsive: true,
+  global_stats: false,
+  tooltips: true,
+});
+
+
+
+
+
+
+
+
+// or enable responsive functionality:
+
+
+// GitHubCalendar(".calendar", "omp12345");
+
+// // or enable responsive functionality:
+// GitHubCalendar(".calendar", "omp12345", { responsive: true });
+
+// // Use a proxy
+// GitHubCalendar(".calendar", "omp12345", {
+//    proxy (username) {
+//      return fetch(`https://your-proxy.com/github?user=${username}`)
+//    }
+// }).then(r => r.text())
