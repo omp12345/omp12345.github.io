@@ -1,7 +1,5 @@
 // *=============================== toggle icon navbar ==================================
 
-const { default: axios } = require("axios");
-
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('#nav-menu')
 
@@ -104,8 +102,8 @@ GitHubCalendar(".calendar", "opm12345");
 GitHubCalendar(".calendar", "opm12345", { responsive: true });
 
 // Use a proxy
-GitHubCalendar(".calendar", "opm12345", {
-   proxy (username) {
-     return axios(`https://your-proxy.com/github?user=${username}`)
-   }
-})
+// GitHubCalendar(".calendar", "opm12345", {
+//    proxy (username) {
+//      return fetch(`https://your-proxy.com/github?user=${username}`)
+//    }
+// }).then((res)=>res.text())
