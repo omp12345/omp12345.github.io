@@ -102,8 +102,16 @@ GitHubCalendar(".calendar", "opm12345");
 GitHubCalendar(".calendar", "opm12345", { responsive: true });
 
 // Use a proxy
-// GitHubCalendar(".calendar", "opm12345", {
-//    proxy (username) {
-//      return fetch(`https://your-proxy.com/github?user=${username}`)
-//    }
-// }).then((res)=>res.text())
+GitHubCalendar(".calendar", "opm12345", {
+  proxy(username) {
+    return fetch(`https://your-proxy.com/github?user=${username}`)
+      .then((res) => res.text()) // Convert the response to text
+      .then((calendarHTML) => {
+        // Handle the calendar HTML
+        document.querySelector(".calendar").innerHTML = calendarHTML;
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
+});
