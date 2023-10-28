@@ -87,7 +87,7 @@ let stats = document.getElementById("github-top-langs").addEventListener("click"
 
 function statsfun(){
   window.open(
-    "https://github.com/opm12345",
+    "https://github.com/omp12345",
     "_blank"
   );
 }
