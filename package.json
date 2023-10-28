@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/prashant174/prashant174..github.io#readme",
   "dependencies": {
-    "axios": "^1.6.0",
-    "github-calendar": "^2.3.2"
+    
+    "github-calendar": "^2.3.2",
+    "react-github-calendar": "^4.0.1"
   }
 }
