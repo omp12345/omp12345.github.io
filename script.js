@@ -102,14 +102,14 @@ function statsfun(){
 // or enable responsive functionality:
 GitHubCalendar(".calendar", "opm12345", { responsive: true });
 
-GitHubCalendar(".calendar", "opm12345");
+// GitHubCalendar(".calendar", "opm12345");
 
-// or enable responsive functionality:
-GitHubCalendar(".calendar", "opm12345", { responsive: true });
+// // or enable responsive functionality:
+// GitHubCalendar(".calendar", "opm12345", { responsive: true });
 
-// Use a proxy
-GitHubCalendar(".calendar", "opm12345", {
-   proxy (username) {
-     return fetch(`https://your-proxy.com/github?user=${username}`)
-   }
-}).then(r => r.text())
+// // Use a proxy
+// GitHubCalendar(".calendar", "opm12345", {
+//    proxy (username) {
+//      return fetch(`https://your-proxy.com/github?user=${username}`)
+//    }
+// }).then(r => r.text())
