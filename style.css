@@ -696,9 +696,20 @@ a:focus::after {
   
     }
     @media (max-width: 768px) {
-      .calenderimg img{
-        width: 100%;
+      .react-activity-calendar{
+        width:100%;
+        border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
       }
+      .react-activity-calendar img{
+        width: 100%;
+        height: 100%;
+        
+      }
+      
       #menu-icon {
         display: block;
       }
