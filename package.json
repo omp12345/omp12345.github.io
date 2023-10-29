@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/omp12345/omp12345..github.io.git"
+    "url": "git+https://github.com/prashant174/prashant174..github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/omp12345/omp12345..github.io/issues"
+    "url": "https://github.com/prashant174/prashant174..github.io/issues"
   },
-  "homepage": "https://github.com/omp12345/omp12345..github.io#readme",
+  "homepage": "https://github.com/prashant174/prashant174..github.io#readme",
   "dependencies": {
     
     "github-calendar": "^2.3.2"
