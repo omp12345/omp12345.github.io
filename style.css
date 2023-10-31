@@ -704,39 +704,17 @@ a:focus::after {
   
     }
     @media (max-width: 768px) {
-      .container{
+      .calenderimg img{
         width: 100%;
-       
       }
 
-      .react-activity-calendar{
-        width:100%;
-       height: 200px;
       
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-        
-      } 
       .calenderimg{
-        position: relative;
-        width: 100%;
-        height: 200px;
-        margin-right: 20px;
-        border-radius: 2px ;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .calenderimg >img{
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-       
-     
         
+        width: 100%;
+       
       }
+      
       
       #menu-icon {
         display: block;
@@ -791,6 +769,9 @@ a:focus::after {
     }
   
     @media (max-width: 450px){
+      .react-activity-calendar{
+        margin-top: 100px;
+      }
       html {
         font-size: 50%;
       }
