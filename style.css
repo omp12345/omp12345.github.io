@@ -774,6 +774,7 @@ a:focus::after {
         margin-top: 100px;
       }
       html {
+        
         font-size: 50%;
       }
       .calenderimg img{
