@@ -782,9 +782,7 @@ a:focus::after {
       .calenderimg img{
         width: 100%;
       }
-      .calenderimg{
-        border: 2px solid green;
-      }
+     
      
   .contact form .input-box input {
     width: 100%;
