@@ -771,6 +771,7 @@ a:focus::after {
   
   
     }
+
   
     @media (max-width: 450px){
       
@@ -781,6 +782,10 @@ a:focus::after {
       .calenderimg img{
         width: 100%;
       }
+      .calenderimg{
+        border: 2px solid green;
+      }
+     
   .contact form .input-box input {
     width: 100%;
   }
@@ -792,6 +797,7 @@ a:focus::after {
       .calenderimg img{
         width: 100%;
       }
+    
       .footer {
         flex-direction: column-reverse;
       }
