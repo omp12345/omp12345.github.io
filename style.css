@@ -766,6 +766,7 @@ a:focus::after {
     grid-template-columns: repeat(1, 1fr);
   }
   
+  
     }
   
     @media (max-width: 450px){
