@@ -657,9 +657,12 @@ a:focus::after {
       .calenderimg img{
         width: 100%;
        
+      
         
         border: none;
       }
+      
+     
       html {
         font-size: 55%;
   
@@ -770,11 +773,9 @@ a:focus::after {
     }
   
     @media (max-width: 450px){
-      .react-activity-calendar{
-        margin-top: 100px;
-      }
+      
       html {
-        
+
         font-size: 50%;
       }
       .calenderimg img{
