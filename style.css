@@ -600,9 +600,11 @@ a:focus::after {
     display: flex;
     /* flex-direction: column; */
     align-items: center;
+   
   }
   #github-stats {
     margin: 70px;
+   
   }
   #resume-button-2 {
     list-style: none;
@@ -611,6 +613,7 @@ a:focus::after {
   #github-stats {
     align-items: center;
     justify-content: center;
+   
   }
   /* ----------------------------------------------------------------- */
   
